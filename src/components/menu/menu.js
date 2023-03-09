@@ -19,7 +19,7 @@ let menuItems = [
   menuWrapper.classList.add('menu');
 
   linksArray.forEach(linkText => {
-    const link = dicument.createElement('li');
+    const link = document.createElement('li');
     link.textContent = linkText;
     menuList.appendChild(link);
   })
