@@ -18,7 +18,7 @@ let menuItems = [
 
   menuWrapper.classList.add('menu');
 
-  linksArray.forEcah(linkText => {
+  linksArray.forEach(linkText => {
     const link = dicument.createElement('li');
     link.textContent = linkText;
     menuList.appendChild(link);
@@ -33,9 +33,16 @@ let menuItems = [
   return menuWrapper;
  }
 
- console.log(menuMaker(menuItems));
 
- document.querySelector('.header').appendChild(menuMaker(menuItems));
+ document
+ .querySelector('.header')
+ .appendChild(menuMaker(menuItems));
+
+ /**
+  * const newMenu = menuMaker(menuItems);
+  * const headerElem = document.querySelector('.header');
+  * headerEleme.appendChild(newMenu);
+  */
 /*
   Step 1: Write a component called 'menuMaker' to create a menu like the markup below:
 
